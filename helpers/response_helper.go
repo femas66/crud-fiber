@@ -8,7 +8,7 @@ func Success(c *fiber.Ctx, message string) error {
 	})
 }
 
-func Error(c *fiber.Ctx, code int, message string) error {
+func Err(c *fiber.Ctx, code int, message string) error {
 	return c.Status(code).JSON(fiber.Map{
 		"message": message,
 	})

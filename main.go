@@ -20,7 +20,7 @@ func main() {
 	})
 
 	app.Get("/error", func(c *fiber.Ctx) error {
-		return helpers.Error(c, 400, "Awok")
+		return helpers.Err(c, 400, "Awok")
 	})
 
 	database.Init()
